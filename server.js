@@ -12,7 +12,7 @@ const WEBAPP_URL = process.env.WEBAPP_URL;
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const FRONTEND_DIR = path.resolve(__dirname, '../frontend');
+const FRONTEND_DIR = path.resolve(__dirname, '/frontend');
 
 async function sendFrontendFile(reply, filename, contentType) {
   try {
