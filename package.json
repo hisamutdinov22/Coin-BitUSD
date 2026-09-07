@@ -1,9 +1,13 @@
 {
   "name": "coin-miniapp",
   "private": true,
+  "type": "module",
   "scripts": {
-    "install:all": "npm install --prefix backend && npm install --prefix frontend",
-    "dev": "npm run dev --prefix backend",
-    "build": "npm run build --prefix frontend"
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "fastify": "^5.2.1",
+    "grammy": "^1.35.0"
   }
 }
