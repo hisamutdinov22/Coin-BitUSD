@@ -1,62 +1,19 @@
 <!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Arcana Spin — демо слот-казино с виртуальными монетами без реальных ставок и вывода средств.">
-  <title>Arcana Spin — Demo Casino</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/style.css">
-</head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Arcana Spin — демо-лобби слот-игр с виртуальными монетами."><title>Arcana Spin — Demo Lobby</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css"></head>
 <body>
-  <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
-  <header class="topbar">
-    <div class="brand"><div class="brand-mark">✦</div><div><div class="brand-name">ARCANA</div><div class="brand-sub">SPIN LAB</div></div></div>
-    <nav><a class="active" href="#games">Игры</a><a href="#promo">Бонусы</a><a href="#recent">Сессия</a></nav>
-    <div class="balance"><span>Вирт. баланс</span><strong id="balance">10 000</strong><span class="coin">◆</span></div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="hero-copy">
-        <span class="eyebrow">DEMO MODE · NO REAL MONEY</span>
-        <h1>Играй. <span>Крути.</span> Лови момент.</h1>
-        <p>Современная демо-платформа со слотами, бонусными раундами и виртуальными монетами. Никаких депозитов, вывода или реальных ставок.</p>
-        <div class="hero-actions"><button class="btn btn-primary" onclick="scrollToGames()">Открыть слоты</button><button class="btn btn-ghost" onclick="showInfo()">Как это работает</button></div>
-      </div>
-      <div class="hero-card">
-        <div class="hero-orb">✦</div><div><small>FEATURED</small><strong>Temple of Lightning</strong><em>× до 5 000</em></div>
-      </div>
-    </section>
-
-    <section id="games" class="section">
-      <div class="section-head"><div><span class="eyebrow">ARCADE</span><h2>Избранные слоты</h2></div><span class="live-dot">● LIVE DEMO</span></div>
-      <div class="games-grid">
-        <article class="game-card featured" onclick="selectGame('Temple of Lightning')"><div class="game-art temple"><div class="art-rays"></div><div class="art-symbol">⚡</div><div class="art-title">TEMPLE<br><b>OF LIGHTNING</b></div><div class="mult">x5000</div></div><div class="game-info"><div><strong>Temple of Lightning</strong><span>5×3 · 20 линий</span></div><button>Играть</button></div></article>
-        <article class="game-card" onclick="selectGame('Mystic Paws')"><div class="game-art paws"><div class="art-symbol">🐺</div><div class="art-title">MYSTIC<br><b>PAWS</b></div><div class="mult">x2500</div></div><div class="game-info"><div><strong>Mystic Paws</strong><span>5×3 · бонусные лапы</span></div><button>Играть</button></div></article>
-        <article class="game-card" onclick="selectGame('Neon Vault')"><div class="game-art neon"><div class="art-symbol">◆</div><div class="art-title">NEON<br><b>VAULT</b></div><div class="mult">x3200</div></div><div class="game-info"><div><strong>Neon Vault</strong><span>6×4 · wild reels</span></div><button>Играть</button></div></article>
-      </div>
-    </section>
-
-    <section class="play-section">
-      <div class="slot-shell">
-        <div class="slot-head"><div><span class="eyebrow">SELECTED GAME</span><h2 id="gameName">Temple of Lightning</h2></div><div class="jackpot">MEGA <strong id="jackpot">2 840 600</strong> ◆</div></div>
-        <div class="reels" id="reels" aria-label="Игровые барабаны"></div>
-        <div class="win-line"></div>
-        <div class="controls"><button class="bet-btn" onclick="changeBet(-100)">−</button><div class="bet"><small>СТАВКА</small><strong id="bet">100</strong></div><button class="bet-btn" onclick="changeBet(100)">+</button><button class="spin" id="spin" onclick="spin()"><span>SPIN</span><small>VIRTUAL COINS</small></button></div>
-        <div class="result" id="result">Готов к спину</div>
-      </div>
-    </section>
-
-    <section id="recent" class="recent section"><div class="section-head"><div><span class="eyebrow">SESSION</span><h2>Последние выигрыши</h2></div><span id="spinsCount">0 спинов</span></div><div id="feed" class="feed"></div></section>
-
-    <section id="promo" class="promo section"><div><span class="eyebrow">DEMO REWARD</span><h2>Ежедневный бонус</h2><p>+500 виртуальных монет за вход в демо-сессию.</p></div><button class="btn btn-primary" onclick="claimBonus()">Забрать +500</button></section>
-  </main>
-
-  <footer><span>18+ · Только демо · Реальные деньги не принимаются и не выплачиваются.</span><span>ARCANA SPIN © 2026</span></footer>
-  <div class="toast" id="toast"></div>
-  <script src="/app.js"></script>
-</body>
-</html>
+<header class="topbar"><div class="brand"><div class="brand-mark">✦</div><div><div class="brand-name">ARCANA</div><div class="brand-sub">SPIN LAB</div></div></div>
+<nav><a class="active" href="#games">Слоты</a><a href="#new">Новинки</a><a href="#popular">Популярное</a><a href="#demo">Демо</a></nav>
+<div class="account"><span>Виртуальный баланс</span><strong id="balance">10 000</strong><span class="coin">◆</span></div></header>
+<main>
+<section class="hero"><div class="hero-copy"><span class="eyebrow">DEMO LOBBY · NO REAL MONEY</span><h1>Большое лобби.<br><span>Быстрый спин.</span></h1><p>Оригинальная демо-витрина в стиле современных casino-lobbies. Названия популярных игр — только как каталог; игровые сессии используют виртуальные монеты.</p><div class="hero-actions"><button class="primary" onclick="document.getElementById('games').scrollIntoView({behavior:'smooth'})">Открыть игры</button><button class="ghost" onclick="claimBonus()">+500 демо-монет</button></div></div><div class="hero-banner"><div class="banner-kicker">WEEKEND DEMO</div><div class="banner-title">MEGA<br>SPIN EVENT</div><div class="banner-sub">100% virtual · 0 deposits</div><div class="orb">✦</div></div></section>
+<section class="ticker"><div class="ticker-track" id="ticker"></div></section>
+<section id="games" class="section"><div class="toolbar"><div class="tabs"><button class="active" data-filter="all">Все</button><button data-filter="popular">Популярное</button><button data-filter="new">Новинки</button><button data-filter="instant">Instant Win</button><button data-filter="crash">Crash</button><button data-filter="table">Table</button></div><div class="filters"><input id="search" placeholder="Поиск игры…"><select id="provider"><option value="all">Все провайдеры</option><option>Pragmatic-style</option><option>Originals</option><option>Arcana Lab</option></select></div></div><div class="section-title"><div><span class="eyebrow">GAME LOBBY</span><h2 id="title">Популярные игры</h2></div><span class="live">● LIVE DEMO</span></div><div id="grid" class="game-grid"></div></section>
+<section id="demo" class="section demo-wrap"><div class="play-panel"><div class="play-top"><div><span class="eyebrow">DEMO PLAY</span><h2 id="selected">Выбери игру</h2></div><div class="mini-balance">◆ <b id="miniBalance">10 000</b></div></div><div class="reels" id="reels"></div><div class="play-controls"><button class="round" onclick="changeBet(-50)">−</button><div class="bet"><small>СТАВКА</small><b id="bet">100</b></div><button class="round" onclick="changeBet(50)">+</button><button class="spin" id="spin" onclick="spin()">SPIN</button></div><div id="result" class="result">Выбери игру в лобби</div></div></section>
+<section class="info-row"><div><b>◆ Виртуальная валюта</b><span>Без депозитов и вывода средств.</span></div><div><b>⚡ Быстрый интерфейс</b><span>Адаптирован под телефон и ПК.</span></div><div><b>🎰 Демо-слоты</b><span>Оригинальная визуальная оболочка.</span></div></section>
+</main><footer><span>18+ · DEMO ONLY · NO REAL MONEY</span><span>ARCANA SPIN © 2026</span></footer><div id="toast" class="toast"></div><script src="/app.js"></script></body></html>
