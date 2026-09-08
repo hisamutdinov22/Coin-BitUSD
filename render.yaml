@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: arcana-spin-demo
+    runtime: node
+    plan: free
+    buildCommand: cd demo-casino && npm install
+    startCommand: cd demo-casino && npm start
+    branch: casino-demo
+    envVars: []
